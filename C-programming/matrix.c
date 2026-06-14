@@ -74,12 +74,7 @@ int input_mat(){
             c++;
         }
     }
-    if(c!=9){
-        while(c<9){
-            r[c]=0;
-        }
-    }
-     render(r,sizeof(r)/sizeof(int),3);
+    render(r,sizeof(r)/sizeof(int),3);
 }
 
 
