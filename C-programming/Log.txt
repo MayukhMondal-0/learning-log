@@ -8,4 +8,5 @@
 
 /5\{palindrome.c}--->>learned about integer plaindromes and also to  extract them using mods and how to account for trailing zeros while 	representing the reversed numbers.
 
-/6\{
+/6\{matrix.c}--->>v1:took 4hrs but implemented a render and input function that takes input from user and show in real time in a maatrix,size is still hardcoded tho needs to be fluid depending on input,also needs app loop and many more matrix operation options.
+
