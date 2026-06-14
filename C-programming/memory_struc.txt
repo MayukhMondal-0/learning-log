@@ -1,0 +1,24 @@
+ [ HIGH ADDRESSES ]
+ ----------------------------------------------------
+
+ | Command Line Arguments & Environment Variables  | <- argv, envp stored here
+ ----------------------------------------------------
+
+ | Stack (Grows Downward ⬇️)                        | <- Local variables, function calls
+ ----------------------------------------------------
+
+ |                     ⚡                           | <- Free unallocated memory space
+ ----------------------------------------------------
+
+ | Heap (Grows Upward ⬆️)                          | <- Dynamic memory (malloc, calloc)
+ ----------------------------------------------------
+
+ | BSS Segment                                      | <- Uninitialised globals (Zeroed)
+ ----------------------------------------------------
+
+ | Data Segment                                     | <- Initialised globals
+ ----------------------------------------------------
+
+ | Text Segment                                     | <- Compiled machine code
+ ----------------------------------------------------
+ [ LOW ADDRESSES ]

@@ -1,0 +1,11 @@
+/1\{macro_exp.c}---->>learned it was possible to change variable names just before the compilation and thus use macros to change a defined variable   		to a diff name and not get a nerror by using the said undefined name later in the code.
+
+/2\{memory_struc.txt}---->>learned about the memory layout of C, huge gaps still exist in the understanding tho.
+
+/3\{loop_exp.c}--->>learned about effects of unsigned int overflow and its effects on loops while playing around with loops and also how to excape a infinite loop through terminal.
+
+/4\{pattern_turn.c}--->>learned about ternary operators and their limits and also got clarity that just making a program short or just making a 	nested loop a single with same number of combined iterations dosen't benefit with time complexit and just brings around bugs due to too 	many conditionals causes practical execution to be slow through pipeline stalls and data fluch caused by branch misprediction and keep the 	standard if-else format, predictable code== more compiler optimisation,also implemented an app loop and made this a complete applet with 	zero as an exit.
+
+/5\{palindrome.c}--->>learned about integer plaindromes and also to  extract them using mods and how to account for trailing zeros while 	representing the reversed numbers.
+
+/6\{
