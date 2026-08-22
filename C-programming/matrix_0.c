@@ -1,3 +1,11 @@
+//convoluted and bugged logic ...rewriting the entire in new file ver
+//cause:tried implementing a dynamic array using raw pointers and moving them witout allocation and
+//withouy freeing memory leading to possible segfaults,memory leaks and undefined behavious and then remade the logic but 
+//only in a hardcoded premade matrix size.
+
+
+
+
 #include <stdio.h>
 
 
