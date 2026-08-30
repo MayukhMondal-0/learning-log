@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<limits.h>
 
 typedef struct{
     int len;
@@ -65,14 +66,54 @@ void render(DynamicArray *array){
     // |_1 4 9_|
 
 
-    
+    printf("_");
+    int a=0,b=0;
+    for(int i=0;i<array->len;i++){
+        if(array->arr[i]!=INT_MIN){
+            a++;
+        }
+        else if(array->arr[i]==INT_MIN){
+            if(a>b){
+                b=a;
+                a=0;
+            }
+
+        }
+    }
+
+    int b1=b;
+    while(b1){
+        printf(" ");
+        b1--;
+    }
+    printf("_\n");
+
+    for(int i=0;;i++){
+        if(array->arr[i]!=INT_MIN && i<=array->len){
+            printf("%d ",array->arr[i]);
+        }
+        else{
+            if(i<=array->len){
+                break;
+            }
+            printf("\n");
+        }
+    }
+    printf("|_");
+    while(b){
+        printf(" ");
+        b--;
+    }
+    printf("_|\n");
+
 }
 
 
 
 DynamicArray* DynamicMatrix(){
     int n=-1;
-    DynamicArray *array;
+    DynamicArray *array = (DynamicArray*)malloc(sizeof(DynamicArray));
+    if (array == NULL) return NULL;
     init(array);
     create(array,10,1);
 
@@ -91,13 +132,17 @@ DynamicArray* DynamicMatrix(){
         else{
             if(i<array->len){
                 array->arr[i]=n;
-                //render()
+                render(array);
             }
             else{
                 expand(array,i,DigiCheck(n));
                 array->arr[i]=n;
-                //render()
+                render(array);
             }
         }
     }
+}
+
+void main(){
+    DynamicMatrix();
 }

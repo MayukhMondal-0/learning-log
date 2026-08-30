@@ -30,10 +30,10 @@ int render(int arr[],int size,int row_len){
         
         if(i<=(row*row_len-1)){
             if(i==last_row){
-                printf("_%d",arr[i]);
+                printf("_%3d",arr[i]);     //%3d _ _ _!!!
             }
             else{
-                printf(" %d",arr[i]);
+                printf(" %3d",arr[i]);
             }
         }
         else{
